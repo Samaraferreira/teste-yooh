@@ -1,0 +1,16 @@
+.social-links {
+  width: 116px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links__item {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--primary-light);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

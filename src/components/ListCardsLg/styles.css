@@ -1,0 +1,30 @@
+.list-cards-lg {
+  width: 100%;
+  padding: 0px 16px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 800px) {
+  .list-cards-lg {
+    width: auto;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (min-width: 1128px) {
+  .list-cards-lg {
+    width: auto;
+    padding: 0;
+    gap: 24px;
+    grid-template-columns: repeat(2, 264px);
+  }
+}
+
+@media (max-width: 970px) {
+  .list-cards-lg {
+    display: none;
+    visibility: hidden;
+  }
+}

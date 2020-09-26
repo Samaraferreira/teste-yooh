@@ -1,0 +1,131 @@
+.sliders {
+  position: relative;
+  max-width: 1128px;
+  height: 520px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliders-controls {
+  position: absolute;
+  bottom: 16px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.sliders-controls__button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--button-background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sliders-controls__button+.sliders-controls__button {
+  margin-left: 16px;
+}
+
+.banner {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  vertical-align: top;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 64px 32px;
+  background-color: var(--banner-first-background);
+
+  display: flex;
+  align-items: center;
+}
+
+.banner--second {
+  background-color: var(--banner-second-background);
+}
+
+.banner__infos {
+  color: var(--text-color-light);
+}
+
+.banner__infos-subtitle {
+  font-size: 1.5rem;
+}
+
+.banner__infos-title {
+  font-size: 2.5rem;
+}
+
+.banner__infos-description {
+  font-size: 14px;
+  width: 182px;
+  margin-top: 8px;
+}
+
+.banner .btn-cta {
+  margin-top: 48px;
+}
+
+.banner__image {
+  position: absolute;
+  width: 320px;
+  bottom: 60px;
+  right: -140px;
+}
+
+.banner--active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 8;
+}
+
+@media (min-width: 428px) {
+  .banner__image {
+    position: absolute;
+    width: 400px;
+    bottom: 20px;
+    right: -140px;
+  }
+}
+
+@media (min-width: 740px) {
+  .sliders {
+    height: 450px;
+  }
+
+  .banner {
+    padding: 64px;
+    height: 450px;
+  }
+
+  .banner__image {
+    width: 479px;
+    top: 20px;
+    right: 32px;
+  }
+
+  .banner__infos-description {
+    width: 271px;
+  }
+}
+
+@media (min-width: 1128px) {
+  .sliders {
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .sliders-controls {
+    bottom: auto;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 48px);
+  }
+}
